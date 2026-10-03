@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$1,000 PayPal Reward Offer</title>
+<meta name="description" content="Explore the $1,000 PayPal reward offer. Eligibility and completion requirements apply.">
+<style>
+  :root{
+    --blue:#0070ba;
+    --blue2:#003087;
+    --ink:#111827;
+    --muted:#667085;
+    --line:#d9dee7;
+    --soft:#f5f8fc;
+    --green:#8ee000;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:Inter,Arial,Helvetica,sans-serif;background:#fff;color:var(--ink)}
+  body{min-height:100vh}
+  a{text-decoration:none;color:inherit}
+  .hero{
+    min-height:370px;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-radius:0 0 28px 28px;
+    background:
+      radial-gradient(circle at 18% 20%, rgba(0,112,186,.40), transparent 34%),
+      radial-gradient(circle at 82% 75%, rgba(0,48,135,.48), transparent 40%),
+      linear-gradient(135deg,#071827 0%,#0b3b63 48%,#061522 100%);
+  }
+  .hero:before,.hero:after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    filter:blur(2px);
+    opacity:.28;
+  }
+  .hero:before{
+    width:420px;height:420px;right:-120px;top:-190px;
+    background:linear-gradient(135deg,#31b7ff,#0050a4);
+  }
+  .hero:after{
+    width:360px;height:360px;left:-150px;bottom:-190px;
+    background:linear-gradient(135deg,#00a9e8,#003087);
+  }
+  .hero-content{position:relative;z-index:2;width:min(920px,92%);padding:42px 20px}
+  .badge{
+    display:inline-flex;align-items:center;gap:9px;
+    padding:10px 18px;border:1px solid rgba(142,224,0,.7);
+    background:rgba(40,65,8,.58);color:#c9ff6c;border-radius:999px;
+    font-size:14px;font-weight:800;letter-spacing:.2px;
+    box-shadow:0 10px 30px rgba(0,0,0,.22);
+  }
+  .bolt{font-size:17px}
+  h1{
+    margin:24px 0 12px;
+    color:#fff;font-size:clamp(36px,6vw,66px);line-height:1.02;
+    letter-spacing:-2.2px;font-weight:900;
+    text-shadow:0 6px 22px rgba(0,0,0,.28);
+  }
+  .sub{color:#dbeeff;font-size:18px;max-width:700px;margin:0 auto;line-height:1.6}
+  .reward{
+    width:min(330px,80vw);height:170px;margin:-54px auto 0;position:relative;z-index:5;
+    border-radius:20px;background:linear-gradient(135deg,#f9fbff,#e8f1fb);
+    border:1px solid rgba(255,255,255,.95);
+    box-shadow:0 24px 55px rgba(15,35,60,.22);
+    display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .reward:before{
+    content:"";position:absolute;width:170px;height:170px;right:-50px;top:-65px;
+    border-radius:50%;background:rgba(0,112,186,.08);
+  }
+  .reward:after{
+    content:"";position:absolute;width:130px;height:130px;left:-55px;bottom:-60px;
+    border-radius:50%;background:rgba(0,48,135,.08);
+  }
+  .reward-inner{position:relative;z-index:2;text-align:center}
+  .reward-amount{font-size:55px;font-weight:950;letter-spacing:-2px;color:var(--blue2)}
+  .reward-brand{font-size:27px;font-weight:900;color:var(--blue);font-style:italic;margin-top:-5px}
+  .reward-note{font-size:11px;color:#475467;margin-top:8px}
+  .wrap{width:min(760px,92%);margin:42px auto 0}
+  .progress{display:flex;gap:8px;align-items:center;justify-content:center;margin-bottom:28px}
+  .bar{height:7px;border-radius:20px;background:#dfe3e9;flex:1;max-width:150px}
+  .bar.active{background:#1f6fd0}
+  .step{font-size:14px;color:#667085;margin-left:5px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:28px;
+    padding:34px 26px 30px;box-shadow:0 15px 45px rgba(16,24,40,.08);
+    text-align:center;
+  }
+  .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:1.5px;font-weight:900;color:var(--blue);margin-bottom:10px}
+  h2{font-size:28px;margin:0 0 25px;letter-spacing:-.6px}
+  .options{display:grid;gap:14px}
+  .cta{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    width:100%;min-height:68px;border-radius:18px;
+    font-size:21px;font-weight:900;border:1px solid #d5dce7;
+    background:linear-gradient(180deg,#f8faff,#eef3fa);
+    color:#101828;transition:.18s ease;
+    box-shadow:0 5px 12px rgba(16,24,40,.05);
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 25px rgba(16,24,40,.12)}
+  .cta.primary{background:linear-gradient(135deg,#0070ba,#003087);color:#fff;border:none;box-shadow:0 12px 25px rgba(0,83,155,.25)}
+  .icon{font-size:27px}
+  .requirements{
+    margin-top:18px;padding:15px 18px;border-radius:15px;
+    background:#f7f9fc;color:#475467;font-size:13px;line-height:1.6
+  }
+  .footer{
+    text-align:center;color:#667085;font-size:12px;line-height:1.65;
+    padding:34px 18px 40px;max-width:850px;margin:auto
+  }
+  .footer a{text-decoration:underline}
+  @media(max-width:560px){
+    .hero{min-height:330px}
+    .reward{margin-top:-45px;height:150px}
+    .reward-amount{font-size:47px}
+    .card{padding:28px 18px}
+    h2{font-size:24px}
+    .cta{min-height:62px;font-size:19px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="badge"><span class="bolt">⚡</span> Reward opportunities may be limited</div>
+    <h1>Explore the $1,000 PayPal Reward Offer</h1>
+    <p class="sub">Check your eligibility and see the offer requirements. Participation and reward availability are subject to the offer terms.</p>
+  </div>
+</header>
+
+<div class="reward" aria-label="$1,000 reward graphic">
+  <div class="reward-inner">
+    <div class="reward-amount">$1000</div>
+    <div class="reward-brand">PayPal</div>
+    <div class="reward-note">Reward offer • Eligibility requirements apply</div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="progress" aria-label="Question progress">
+    <div class="bar active"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <span class="step">Question 1 of 3</span>
+  </div>
+
+  <section class="card">
+    <div class="eyebrow">Quick eligibility check</div>
+    <h2>Do you use PayPal?</h2>
+
+    <div class="options">
+      <a class="cta primary" href="https://www.af9m8trk.com/5R111D9Q/JWK11UVS/" rel="nofollow sponsored noopener">
+        <span class="icon">👍</span> Yes, continue
+      </a>
+      <a class="cta" href="https://www.af9m8trk.com/5R111D9Q/JWK11UVS/" rel="nofollow sponsored noopener">
+        <span class="icon">👎</span> No, continue
+      </a>
+      <a class="cta" href="https://www.af9m8trk.com/5R111D9Q/JWK11UVS/" rel="nofollow sponsored noopener">
+        <span class="icon">→</span> Check the offer
+      </a>
+    </div>
+
+    <div class="requirements">
+      You must complete the applicable offer requirements to qualify for any advertised reward.
+      Availability, eligibility, purchase/program requirements, and other conditions may apply.
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <strong>Important:</strong> This page is an independent promotional landing page and is not sponsored,
+  endorsed, administered by, or affiliated with PayPal. “PayPal” is a trademark of PayPal or its respective
+  owners. All trademarks belong to their respective owners. Please review the offer provider’s terms before participating.
+</footer>
+
+</body>
+</html>
